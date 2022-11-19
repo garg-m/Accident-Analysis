@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <br>
+    <div style="background-color: rgb(238, 20, 31); padding-bottom: 0px; padding-top: 0px"
+        class=" jumbotron container-fluid text-center">
+        <i>
+            <h2><b><u style="color:lightgrey">Los Angeles Crime Data Analysis</u></b></h2>
+        </i>
+    </div>
+
+    <div style="background-color: lightgrey; border-radius: 20px" class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3><u>About Database</u></h3>
+                <p>
+                    <b><i> This dataset reflects incidents of crime in the City of Los Angeles dating back to 2010. The
+                            source is <a
+                                href="https://data.lacity.org/A-Safe-City/Crime-Data-from-2010-to-Present/y8tr-7khq"
+                                style="color: darkblue">data.lacity.org</a>
+                            which is updated
+                            every 14 days. We have a total of 13 tables. Click below buttons to get count of records
+                            in respective table </i></b>
+                </p>
+            </div>
+        </div>
+
+
+
+
+        <div class="col-md-2">
+            <a href="/info?id=Accident"><input type="button" value="Accident" style="width: 100px"></a>
+            {{#if Accident}}
+            <br><br>
+            &nbsp
+            &nbsp
+            &nbsp<b>{{Accident}}</b>
+            {{/if}}
+        </div>
+
+        <div class="col-md-2">
+            <a href="/info?id=Caused"><input type="button" value="Caused" style="width: 100px"></a>
+            {{#if Caused}}
+            <br><br>
+            &nbsp
+            &nbsp
+            &nbsp<b>{{Caused}}</b>
+            {{/if}}
+        </div>
+
+        <div class="col-md-2">
+            <a href="/info?id=Delay"><input type="button" value="Delay" style="width: 130px"></a>
+            {{#if Delays}}
+
+            <br><br>
+            &nbsp
+            &nbsp
+            &nbsp<b>{{Delay}}</b>
+
+            {{/if}}
+        </div>
+
+        <div class="col-md-2">
+            <a href="/info?id=Reports"><input type="button" value="Reports" style="width: 100px"></a>
+            {{#if Reports}}
+
+            <br><br>
+            &nbsp
+            &nbsp
+            &nbsp<b>{{Reports}}</b>
+            {{/if}}
+        </div>
+        <div class="col-md-2">
+            <a href="/info?id=Location"><input type="button" value="Location" style="width: 100px"></a>
+            {{#if Location}}
+
+            <br><br>
+            &nbsp
+            &nbsp
+            &nbsp<b>{{Location}}</b>
+            {{/if}}
+        </div>
+        <div class="col-md-2">
+            <a href="/info?id=Weather"><input type="button" value="Weather" style="width: 100px"></a>
+            {{#if Weather}}
+
+            <br><br>
+            &nbsp
+            &nbsp
+            &nbsp<b>{{Weather}}</b>
+            {{/if}}
+        </div>
+        <br><br><br><br><br><br>
+        <div class="col-md-2">
+            <a href="/info?id=Incident"><input type="button" value="Incident"></a>
+            {{#if Incident}}
+
+            <br><br>
+            &nbsp
+            &nbsp
+            &nbsp<b>{{Incident}}</b>
+            {{/if}}
+        </div>
+
+        <br><br><br><br>
+    </div>
+
+</body>
+
+</html>
